@@ -277,10 +277,10 @@ class Boss_enemy(Enemy):
         now=pygame.time.get_ticks()
         if now- self.bullet_clock >300:
             self.bullet_clock=now
-            b=Bullet_angle(self.rect.centerx,self.rect.centery,boss_enemy_bullet_imags[0],0,3,10, self,0)
-            b=Bullet_angle(self.rect.centerx,self.rect.centery,boss_enemy_bullet_imags[1],0,-3,10,self,0)
-            b=Bullet_angle(self.rect.centerx,self.rect.centery,boss_enemy_bullet_imags[2],3,0,10,self,0)
-            b=Bullet_angle(self.rect.centerx,self.rect.centery,boss_enemy_bullet_imags[3],-3,0,10,self,0)
+            Bullet_angle(self.rect.centerx,self.rect.centery,boss_enemy_bullet_imags[0],0,3,10, self,0)
+            Bullet_angle(self.rect.centerx,self.rect.centery,boss_enemy_bullet_imags[1],0,-3,10,self,0)
+            Bullet_angle(self.rect.centerx,self.rect.centery,boss_enemy_bullet_imags[2],3,0,10,self,0)
+            Bullet_angle(self.rect.centerx,self.rect.centery,boss_enemy_bullet_imags[3],-3,0,10,self,0)
     def move_mode2(self):
         if self.rect.x>self.mode2_movetopoint.x :
             self.rect.x-=self.speedx
